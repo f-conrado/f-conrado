@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>My Mind</title>
+        <meta name="description" content="My sick thoughts">
+        <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Viaoda+Libre&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="static/style.css" />
+    </head>
+
+<body onload="focus()">
+
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="/posts/">HOME</a></li>
+                <li><a href="/posts/amigos/">AMIGOS</a></li>
+                <li><a href="/posts/pessoas/">SUSPEITOS</a></li>
+                <li><a href="/posts/chat/">CHAT</a></li>
+                <li><a href="/posts/about/">SUA PÁGINA</a></li>
+            </ul>
+        </nav>
+        <!--h1 class="titulo-site"><span>Welcome To My Mind</span></h1-->
+    </header>
+
+    <h1 class="titulo-site titulo-pagina">Suspeitos</h1>
+    <div class="people">
+
+        <div>
+            <button type="submit" class=" enemies" onclick="openForm()">
+                <h1 class="char-name">Major Barbeque</h1>
+                <img class="images" src="static/images/Cara1.png">
+                <h2>Inteligente</h2>
+                <h2>Ciúmento</h2>
+            </button>
+        </div>
+
+        <div>
+            <button type="submit" class="enemies" onclick="openForm()">
+                <h1 class="char-name">Professora Pink</h1>
+                <img class="images" src="static/images/Cara2.png">
+                <h2>Silencioso</h2>
+                <h2>Mortal</h2>
+            </button>
+        </div>
+        
+        <div>
+            <button type="submit" class="enemies" onclick="openForm()">
+                <h1 class="char-name">O<br> Capitão</h1>
+                <img class="images" src="static/images/Cara3.png">
+                <h2>Astuto</h2>
+                <h2>Mentiroso</h2>
+            </button>
+        </div>
+
+<!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+          <button class="cancel" onclick="closeForm()">X</button>
+          <form class="form" name="login" action="submit" method="POST">
+          <input type="hidden" name="username" value="fabricio"></input>
+          <label class="formo">Password</label>
+          <input class="formo" type="password" name="password"></input>
+          <button class="btn formo" type="submit">Entrar</button>
+          </form>
+      </div>
+    </div>
+    </div>
+
+<script src="static/java.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</body>
+
+</html>
